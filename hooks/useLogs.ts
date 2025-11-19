@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { LogEntry, LogType } from '../types';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'http://47.86.34.245:3001/api';
 
 export const useLogs = () => {
   const [logs, setLogs] = useState<LogEntry[]>([]);

@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { MonitorConfig, LogType } from '../types';
 
-const API_URL = 'http://localhost:3001/api';
+const API_URL = 'http://47.86.34.245:3001/api';
 
 type LogFunction = (type: LogType, message: string, monitorName?: string, details?: string) => void;
 
