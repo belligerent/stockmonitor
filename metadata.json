@@ -1,0 +1,5 @@
+{
+  "name": "Monitor",
+  "description": "A real-time price monitoring dashboard allowing custom API endpoints, flexible scanning intervals, and webhook alerts.",
+  "requestFramePermissions": []
+}
