@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MonitorConfig } from '../types';
 import { X, HelpCircle, BellOff } from 'lucide-react';
+import {v4 as uuidv4} from "uuid";
+
 
 interface MonitorModalProps {
   isOpen: boolean;
@@ -50,7 +52,7 @@ const MonitorModal: React.FC<MonitorModalProps> = ({ isOpen, onClose, onSave, in
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSave({
-      id: initialData?.id || crypto.randomUUID(),
+      id: initialData?.id || uuidv4(),
       name: name || 'Untitled Monitor',
       url,
       responseKey,
